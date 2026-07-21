@@ -1,0 +1,28 @@
+# Node dependencies
+node_modules/
+.next/
+out/
+build/
+dist/
+
+# Python dependencies
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.coverage
+htmlcov/
+.venv/
+venv/
+ENV/
+env/
+
+# Database ^& local config
+*.db
+.env
+.env.local
+
+# OS files
+.DS_Store
+Thumbs.db
