@@ -1,5 +1,5 @@
 # ── Build Phase 1: Compile static React/Next.js frontend ──────────────────────
-FROM node:18-alpine AS frontend-builder
+FROM node:18-slim AS frontend-builder
 WORKDIR /frontend
 COPY frontend/package*.json ./
 RUN npm ci --quiet
