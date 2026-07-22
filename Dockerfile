@@ -5,7 +5,7 @@ COPY frontend/package*.json ./
 RUN npm ci --quiet
 COPY frontend/ ./
 # Static export generated inside /frontend/out
-RUN npm run build
+RUN NODE_OPTIONS="--max-old-space-size=450" npm run build
 
 # ── Build Phase 2: Python FastAPI production server ───────────────────────────
 FROM python:3.12-slim
